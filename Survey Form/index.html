@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    
+    <header>
+        <div id="title-box">
+            <img src="https://cdn.discordapp.com/attachments/589091474314887201/589091893007351808/IndigoStackTempLogo1.png">
+            <h1 id="title">
+                IndigoStack Survey
+            </h1>
+        </div>
+    </header>
+
+    <div id="main">
+            
+            <div id="description-box">
+                <p id="description">
+                    Please let us know how we can improve our services
+                </p>
+            </div>
+
+            <form id="survey-form">
+                
+                <div class="survey-block">
+                    <div class="labels">
+                        <label id="name-label" for="name">Name:</label>
+                    </div>
+                    <div class="inputs">
+                        <input id="name" class="input-field" name="name" placeholder="Enter your name" required>
+                    </div>
+                </div>
+
+                <div class="survey-block">
+                    <div class="labels">
+                        <label id="email-label" for="email">Email:</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="email" id="email" class="input-field" name="email" 
+                    placeholder="Enter your email" required>
+                    </div>
+                </div>
+            
+                <div class="survey-block">
+                    <div class="labels">
+                        <label id="number-label" for="number">Phone:</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="number" id="number" class="input-field" name="number" 
+                    placeholder="Enter your phone number (optional)" min="1111111111" max="9999999999">
+                    </div>
+                </div>
+
+                <div class="survey-block">
+                        <div class="labels">
+                        <label for="age">Age:</label>
+                        </div>
+                        <div class="inputs">
+                            <select id="dropdown" name="age" class="dropdown">
+                                <option disabled value>Select an option</option>
+                                <option  value="18-25">18-25</option>
+                                <option value="25-40">25-40</option>
+                                <option value="40-55">40-55</option>
+                                <option value="55+">55+</option>
+                                <option value="preferNo">Prefer not to say</option>
+                            </select>
+                        </div>
+                </div>
+
+                <div class="survey-block">
+                        <div class="labels-rating">
+                        <label id="rating-label" for="rating">How likely are you to reccomend us?</label>
+                        </div>
+                        <div class="inputs">
+                            <ul>
+                                <li class="radio">
+                                    <label>
+                                         Definitely <input name="radio-buttons" value="1"
+                                    type="radio" class="rating">
+                                    </label>
+                                </li>
+                                <li class="radio">
+                                    <label>
+                                         Maybe <input name="radio-buttons" value="2"
+                                    type="radio" class="rating">
+                                    </label>
+                                </li>
+                                <li class="radio">
+                                    <label>
+                                         No way <input name="radio-buttons" value="3"
+                                    type="radio" class="rating">
+                                    </label>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                </div>
+
+                <div class="survey-block">
+                    <div class="labels-rating">
+                        <label for="services">Services purchased (check all that apply)</label>
+                    </div>
+                    <div class="inputs">
+                        <ul id="services">
+                            <li class="checkbox">
+                                <label>
+                                        <input name="services" value="1" type="checkbox" class="rating">Website build from scratch
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label>
+                                        <input name="services" value="2" type="checkbox" class="rating">Website redesign
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label>
+                                        <input name="services" value="3" type="checkbox" class="rating">Marketing/SEO package
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label>
+                                        <input name="services" value="4" type="checkbox" class="rating">Website optimization
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label>
+                                        <input name="services" value="5" type="checkbox" class="rating">Website maintenence
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="survey-block">
+                    <div class="labels-rating">
+                        <label for="comments">Any additional comments?</label>
+                    </div>
+                    <div class="inputs">
+                            <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" 
+                        name="comment" placeholder="Enter your comment here..."></textarea>
+                    </div>
+                </div>
+
+                <button id="submit" type="submit">Submit</button>
+
+            </form>
+
+
+    </div>
+
+</html>
