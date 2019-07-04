@@ -179,7 +179,7 @@ form {
 
 #video {
     display: block;
-    margin: 0px auto 0px auto;
+    margin: 0px auto 100px auto;
     border: 10px inset #CA0202;
     border-radius: 20px;
     text-decoration: none;
@@ -191,9 +191,34 @@ textarea:focus, button:focus, video {
 }
 
 footer {
+    background-color: whitesmoke;
     text-align: center;
     padding: 10px;
+    display: flex;
 }
+
+#footPhone, #footEmail, #footCopy {
+    margin: 0;
+    padding: 0;
+}
+
+#footPhone {
+    flex: 1;
+    align-content: flex-start;
+}
+
+#footEmail {
+    align-content: center;
+    flex: 1;
+}
+
+#footCopy {
+    flex: 1;
+    align-content: flex-end;
+}
+
+
+
 
 @media screen and (max-width: 425px) {
 
@@ -305,6 +330,12 @@ footer {
         height: 562px;
     }
 
+    footer {
+        padding: 40px;
+    }
 
+    footer p {
+        font-size: 20px;
+    }
 
 }
