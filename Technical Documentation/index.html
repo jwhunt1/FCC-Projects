@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="resources/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <nav id="navbar">
+        <header>HTML Essentials</header>
+        <ul>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#headers_and_paragraphs">Headers And Paragraphs</a></li>
+            <li><a class="nav-link" href="#div">Div</a></li>
+            <li><a class="nav-link" href="#unordered_list_menu">Unordered List Menu</a></li>
+            <li><a class="nav-link" href="#anchor">Anchor</a></li>
+        </ul>
+    </nav>
+
+    <body>
+        <main id="main-doc">
+            <section class="main-section" id="introduction">
+                <header>Introduction</header>
+                <article>
+                    <p>This technical documentation is meant to give you a brief run down of a few 
+                    essential html elements that I use every day. Also some basics, such as starting
+                    every html document with-</p>
+                    <code>&lt;!DOCTYPE html&gt;</code>
+                    <p>This should rest on the first line of every html document to specify the html version.
+                    The default html defines that it is the current version of html.</p>
+                </article>
+            </section>
+
+            <section class="main-section" id="headers_and_paragraphs">
+                <header>Headers And Paragraphs</header>
+                <article>
+                    <p>A basic layout in html is typically to have the subject in a header tag and the main text
+                    on the subject in a paragraph tag. for example, the code for this section is roughly-</p>
+                    <code>&lt;header&gt;Headers And Paragraph&lt;header&gt;  &lt;p&gt;A basic layout in html is typically to have the subject in a header tag and the main text
+                    on the subject in a paragraph tag. for example, the code for this section is roughly-&lt;/p&gt;</code>
+                    <p>This basic use of header and paragraph is used in basically every web page ever</p>
+                </article>
+            </section>
+
+            <section class="main-section" id="div">
+                <header>Div</header>
+                <article>
+                    <p>Divs are essential for organization and for ease of use in CSS. Though there are some new elements
+                    in HTML5 that are essentailly specific use case divs; Divs are still heavily used. For example, if you
+                    wanted a section with a picture next to a paragraph you could put in all in a div, then puth both the image
+                    and the paragraph in their own respective divs for ease of use in css. an example of what I'm taling about-</p>
+                    <code>&lt;div&gt;<br>&nbsp;&lt;div&gt;<br>&nbsp;&nbsp;&lt;img&gt;<br>&nbsp;&lt;/div&gt;<br>&nbsp;&lt;div&gt;<br>&nbsp;&nbsp;&lt;p&gt;&lt;/p&gt;<br>&nbsp;&lt;/div&gt;<br>&lt;/div&gt;</code>
+                    <p>Some specific divs were made to help support organization and screen readers. There names are pretty
+                    self explanitory, here are a few-</p>
+                    <ul>
+                        <li>&lt;main&gt; - for the main content of the page</li>
+                        <li>&lt;section&gt; - for subject sections of the page</li>
+                        <li>&lt;header&gt; - for the heading of a page</li>
+                        <li>&lt;nav&gt; - for page/site navigation menus</li>
+                        <li>&lt;article&gt; - for articles of information that can stand alone</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="main-section" id="unordered_list_menu">
+                <header>Unordered List Menu</header>
+                <article>
+                    <p>It is a common practice to use unordered list for navigation menus and menus in general as it
+                    is a much more structures way to do things versus using paragraph tags and wrestling with it in CSS.
+                    For example, here is the code for the navigation bar of this document-</p>
+                    <code>
+                        &lt;ul&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;&lt;a class="nav-link" href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;&lt;a class="nav-link" href="#headers_and_paragraphs"&gt;Headers And Paragraphs&lt;/a&gt;&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;&lt;a class="nav-link" href="#div"&gt;Div&lt;/a&gt;&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;&lt;a class="nav-link" href="#unordered_list_menu"&gt;Unordered List Menu&lt;/a&gt;&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;&lt;a class="nav-link" href="#anchor"&gt;Anchor&lt;/a&gt;&lt;/li&gt;<br>
+                        &lt;/ul&gt;
+                    </code>
+                    <p>As you can see, we also use the &lt;a&gt; or anchor tag so that each lsit item links to something
+                    which we will discuss in the next section.</p>
+                </article>
+            </section>
+
+            <section class="main-section" id="anchor">
+                <header>Anchor</header>
+                <article>
+                    <p>The anchor tag is used to link to various things on the page, on another page, or on another website</p>
+                    <code>&lt;a href="#main-doc"&gt;back to the top&lt;/a&gt;</code>
+                    <p>This code above will produce this <a href="#main-doc">back to the top</a></p>
+                </article>
+            </section>
+
+        </main>
+    </body>
+
+</html>
